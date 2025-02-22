@@ -170,6 +170,13 @@ input {
         padding: 10px 0;
         z-index: 1020;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        white-space: nowrap;
+        /* Prevent items from wrapping */
+        scrollbar-width: thin;
+        /* For Firefox */
+        scrollbar-color: #ccc transparent;
     }
 
     .sidebr a {
@@ -186,6 +193,7 @@ input {
         height: 20px;
         margin-bottom: 4px;
     }
+
 
     .main-content {
         margin-left: 0;
@@ -205,6 +213,21 @@ input {
         flex-direction: column !important;
         /* Stack image first */
     }
+
+    /* Scrollbar for Webkit Browsers */
+    .sidebr::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .sidebr::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .sidebr::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border-radius: 5px;
+    }
+
 
 
 

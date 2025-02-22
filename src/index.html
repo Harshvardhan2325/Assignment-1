@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment No: 1</title>
+        <title>Assignment No 1</title>
 
         <!-- Bootstrap CSS -->
         <link
@@ -220,12 +220,29 @@
         <!-- Sidebar -->
         <nav class="sidebr p-4">
 
-            <a href="#"><img src="./assets/icons/dashboard.svg"
-                    alt="Dashboard Icon" height="20px"> Dashboard</a>
+            <!-- Dashboard with Dropdown -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle w-100 text-start"
+                    type="button" data-bs-toggle="dropdown"
+                    style="color: #323232;">
+                    <img src="./assets/icons/dashboard.svg" alt="Dashboard Icon"
+                        height="20px"> Dashboard
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Dashboard</a></li>
+                    <li><a class="dropdown-item" href="#">Resource
+                            Allocation</a></li>
+                    <li><a class="dropdown-item" href="#">Certification
+                            Roadmap</a></li>
+                    <li><a class="dropdown-item" href="#">Skills Matrix</a></li>
+                    <li><a class="dropdown-item" href="#">Resource
+                            Bilability</a></li>
+                </ul>
+            </div>
 
             <!-- Team Members Dropdown -->
-            <div class="dropdown">
-                <button class="btn  dropdown-toggle w-100 text-start"
+            <div class="dropdown mt-2">
+                <button class="btn dropdown-toggle w-100 text-start"
                     type="button" data-bs-toggle="dropdown"
                     style="color: #323232;">
                     <img src="./assets/icons/team member.png"
@@ -236,25 +253,60 @@
                                 src="./assets/icons/team member.png" alt
                                 height="22px"> Team Member</a></li>
                     <li><a class="dropdown-item" href="#"><img
-                                src="./assets/icons/certification.svg"
-                                alt
+                                src="./assets/icons/certification.svg" alt
                                 height="22px"> Certification</a></li>
+
                 </ul>
             </div>
 
-            <a href="#"><img
-                    src="./assets/icons/project.png"
-                    alt="Projects Icon"
-                    height="22px"> Projects</a>
-            <a href="#"><img
-                    src="./assets/icons/clients.png"
-                    alt="Clients Icon"
-                    height="22px"> Clients</a>
-            <a href="#"><img
-                    src="./assets/icons/learning.png"
-                    alt="Learning Icon"
-                    height="22px"> Learning
-                Path</a>
+            <!-- Projects Dropdown -->
+            <div class="dropdown mt-2">
+                <button class="btn dropdown-toggle w-100 text-start"
+                    type="button" data-bs-toggle="dropdown"
+                    style="color: #323232;">
+                    <img src="./assets/icons/project.png" alt="Projects Icon"
+                        height="22px"> Projects
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">In Progress</a></li>
+                    <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                    <li><a class="dropdown-item" href="#">Completed</a></li>
+                    <li><a class="dropdown-item" href="#">Archived</a></li>
+                </ul>
+            </div>
+
+            <!-- Clients Dropdown -->
+            <div class="dropdown mt-2">
+                <button class="btn dropdown-toggle w-100 text-start"
+                    type="button" data-bs-toggle="dropdown"
+                    style="color: #323232;">
+                    <img src="./assets/icons/clients.png" alt="Clients Icon"
+                        height="22px"> Clients
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Client
+                            Details</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Learning Path Dropdown -->
+            <div class="dropdown mt-2">
+                <button class="btn dropdown-toggle w-100 text-start"
+                    type="button" data-bs-toggle="dropdown"
+                    style="color: #323232;">
+                    <img src="./assets/icons/learning.png" alt="Learning Icon"
+                        height="22px"> Learning Path
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Learning Path
+                        </a></li>
+                    <li><a class="dropdown-item" href="#">Courses</a></li>
+                    <li><a class="dropdown-item"
+                            href="#">Skill Sets</a></li>
+                </ul>
+            </div>
+
         </nav>
 
         <!-- Main Content (Scrollable) -->
@@ -312,14 +364,14 @@
 
                         <!-- Section-1 -->
 
-                        <div class="col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Team Member id</label>
-                            <input type="text" id="id" name="emp-id"
+                            <input type="text" id="name" name="emp-id"
                                 placeholder="Enter ID"
                                 class="form-control f-control">
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Designation</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -346,7 +398,7 @@
                             </select>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Role</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -372,7 +424,7 @@
                                     value="Assessee">Assessee</option>
                             </select>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Depatment</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -397,7 +449,7 @@
 
                         <!-- Section-2 -->
 
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Reporting Manager</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -418,12 +470,12 @@
                                     Johnson</option>
                             </select>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Joining Date</label>
                             <input type="date" class="form-control f-control"
                                 placeholder="select Date">
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Billing Status</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -439,7 +491,7 @@
 
                             </select>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Availability
                                 Status</label>
                             <select name="designation"
@@ -454,7 +506,7 @@
                             </select>
                         </div>
                         <!-- Section-3 -->
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Total
                                 Experience</label>
                             <div class="row">
@@ -493,7 +545,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Cluster</label>
                             <select name="cluster" class="form-select f-select"
                                 id="cluster">
@@ -505,12 +557,12 @@
 
                             </select>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Available From</label>
                             <input type="date" class="form-control f-control"
                                 placeholder="select Date">
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-6 col-lg-3">
                             <label for="name">Tags</label>
                             <select name="designation"
                                 class="form-select f-select"
@@ -592,7 +644,7 @@
 
                         <!-- Section-5 -->
 
-                        <div class="col-md-12">
+                        <div class="col-12">
                             <label for="formFileSm"
                                 class="form-label mt-3">Add Skill
                                 Set</label><br>
